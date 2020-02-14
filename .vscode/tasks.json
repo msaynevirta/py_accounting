@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "problemMatcher": [{
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceFolder}/src"]}
+            ]
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make clean",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "problemMatcher": [{
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceFolder}/src"]}
+            ]
+        },
+        {
+            "label": "Distclean",
+            "type": "shell",
+            "command": "make distclean",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "problemMatcher": [{
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceFolder}/src"]}
+            ]
+        }
+    ]
+}
