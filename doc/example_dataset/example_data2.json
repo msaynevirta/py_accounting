@@ -1,0 +1,586 @@
+{
+    "expenses": {
+        "year": 2019,
+        "months": {
+            "9": [
+                {
+                    "entry_date": "2019-09-08T19:09:15+0300",
+                    "amount": 14.9,
+                    "taxes": [
+                        [
+                            1.83,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Kotipizza Mäntsälä - Keskusta",
+                    "sub_cat": "ravintola",
+                    "main_cat": "illallinen",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 11.90,
+                            "tax_percentage": 0.14,
+                            "name": "Tulinen Kana Kotzone"
+                        },
+                        {
+                            "price": 3.00,
+                            "tax_percentage": 0.14,
+                            "name": "Hanajuoma"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-08T19:17:46+0300",
+                    "amount": 15.9,
+                    "taxes": [
+                        [
+                            1.95,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Kotipizza Mäntsälä - Keskusta",
+                    "sub_cat": "ravintola",
+                    "main_cat": "illallinen",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 9.90,
+                            "tax_percentage": 0.14,
+                            "name": "Tropicana"
+                        },
+                        {
+                            "price": 3.00,
+                            "amount": 2,
+                            "tax_percentage": 0.14,
+                            "name": "Hanajuoma"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-09T00:00:00+0000",
+                    "amount": 870.0,
+                    "taxes": [],
+                    "beneficiary": "Vuokra Oy",
+                    "sub_cat": "asuminen",
+                    "main_cat": "vuokra",
+                    "payment_method": [
+                        "OP",
+                        "Wire"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-09T13:51:00+0300",
+                    "amount": 7.93,
+                    "taxes": [
+                        [
+                            0.97,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Prisma Iso Omena",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 1.67,
+                            "tax_percentage": 0.14,
+                            "name": "Vaasan ruispalat 12kpl"
+                        },
+                        {
+                            "price": 2.89,
+                            "tax_percentage": 0.14,
+                            "name": "Ohuen ohut keittokinkku"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-11T19:55:00+0300",
+                    "amount": -4.70,
+                    "taxes": [
+                        [
+                            -0.91,
+                            0.24
+                        ]
+                    ],
+                    "beneficiary": "Alepa Kampinkeskus",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": -4.70,
+                            "tax_percentage": 0.24,
+                            "name": "Pullonpalautus"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-11T20:42:00+0300",
+                    "amount": -0.40,
+                    "taxes": [
+                        [
+                            -0.08,
+                            0.24
+                        ]
+                    ],
+                    "beneficiary": "Alepa Kampinkeskus",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": -0.40,
+                            "tax_percentage": 0.24,
+                            "name": "Pullonpalautus"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-09T13:38:50+0300",
+                    "amount": 61.60,
+                    "taxes": [
+                        [
+                            5.6,
+                            0.1
+                        ]
+                    ],
+                    "beneficiary": "Espoon asiointipalvelu - YPP Matinkylä",
+                    "sub_cat": "liikenne",
+                    "main_cat": "matkakortti",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 61.60,
+                            "tax_percentage": 0.10,
+                            "name": "Matkakortti"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-13T21:46:00+0300",
+                    "amount": 31.95,
+                    "taxes": [
+                        [
+                            3.92,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Lidl Niittykumpu",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 4.09,
+                            "discount": 0.30,
+                            "amount": 4,
+                            "tax_percentage": 0.14,
+                            "name": "Kanamestari broileri paistileike"
+                        },
+                        {
+                            "price": 3.35,
+                            "discount": 0.30,
+                            "amount": 4,
+                            "tax_percentage": 0.14,
+                            "name": "Reilu naudan jauheliha"
+                        },
+                        {
+                            "price": 1.39,
+                            "tax_percentage": 0.14,
+                            "name": "Korianteri ruukussa"
+                        },
+                        {
+                            "price": 1.15,
+                            "amount": 2,
+                            "tax_percentage": 0.14,
+                            "name": "Freshona Wok Mix Classic"
+                        },
+                        {
+                            "price": 0.99,
+                            "amount": 4,
+                            "mass": 0.500,
+                            "tax_percentage": 0.14,
+                            "name": "Litteä persikka 500g"
+                        },
+                        {
+                            "price": 3.27,
+                            "mass": 0.470,
+                            "tax_percentage": 0.14,
+                            "name": "Irtomakeiset"
+                        },
+                        {
+                            "price": 0.23,
+                            "mass": 0.066,
+                            "tax_percentage": 0.14,
+                            "name": "Reilun kaupan limetti"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-14T21:36:00+0300",
+                    "amount": 33.60,
+                    "taxes": [
+                        [
+                            5.48,
+                            0.24
+                        ],
+                        [
+                            23.51,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Ravintola Korea House",
+                    "sub_cat": "ravintola",
+                    "main_cat": "illallinen",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 6.80,
+                            "tax_percentage": 0.24,
+                            "volume": 0.5,
+                            "name": "Karhu III"
+                        },
+                        {
+                            "price": 9.00,
+                            "tax_percentage": 0.14,
+                            "name": "Modum Tygim"
+                        },
+                        {
+                            "price": 17.80,
+                            "tax_percentage": 0.14,
+                            "name": "Dakgangjeong"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-15T20:11:00+0300",
+                    "amount": 1.45,
+                    "taxes": [
+                        [
+                            0.18,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Alepa Jousenpuisto",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 1.45,
+                            "tax_percentage": 0.14,
+                            "amount": 1,
+                            "mass": null,
+                            "discount": null,
+                            "name": "Punainen currytahna",
+                            "category_high": null,
+                            "category_mid": null,
+                            "category_low": null,
+                            "common_id": null,
+                            "barcode": null
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-17T20:18:00+0300",
+                    "amount": 6.71,
+                    "taxes": [
+                        [
+                            0.82,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Lidl Niittykumpu",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "Nordea",
+                        "Visa Electron"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 1.15,
+                            "tax_percentage": 0.14,
+                            "amount": 2,
+                            "name": "Combino chow-mein-nuudeli"
+                        },
+                        {
+                            "price": 4.41,
+                            "tax_percentage": 0.14,
+                            "mass": 1.476,
+                            "name": "Nektariini irto"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-21T18:48:00+0300",
+                    "amount": 13.30,
+                    "taxes": [
+                        [
+                            1.62,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Prisma Olari",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 1.05,
+                            "tax_percentage": 0.14,
+                            "amount": 2,
+                            "name": "Kuoritut tomaatit 400"
+                        },
+                        {
+                            "price": 0.87,
+                            "tax_percentage": 0.14,
+                            "amount": 2,
+                            "name": "Tomaattimurska"
+                        },
+                        {
+                            "price": 1.89,
+                            "tax_percentage": 0.14,
+                            "name": "Basilika"
+                        },
+                        {
+                            "price": 0.89,
+                            "tax_percentage": 0.14,
+                            "amount": 2,
+                            "name": "Mozzarella"
+                        },
+                        {
+                            "price": 2.95,
+                            "tax_percentage": 0.14,
+                            "name": "Pepperonisalami"
+                        },
+                        {
+                            "price": 1.55,
+                            "tax_percentage": 0.14,
+                            "name": "Turun sinappi väkevä"
+                        },
+                        {
+                            "price": 0.60,
+                            "tax_percentage": 0.14,
+                            "mass": 0.414,
+                            "name": "Punasipuli irto"
+                        },
+                        {
+                            "price": 0.69,
+                            "tax_percentage": 0.14,
+                            "name": "Tomaattisose"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-23T22:25:34+0300",
+                    "amount": 13.45,
+                    "taxes": [
+                        [
+                            2.60,
+                            0.24
+                        ]
+                    ],
+                    "beneficiary": "Shell Haukilahti",
+                    "sub_cat": "autoilu",
+                    "main_cat": "huoltoasema",
+                    "payment_method": [
+                        "OP",
+                        "Visa Debit"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 26.90,
+                            "tax_percentage": 0.24,
+                            "discount": 0.5,
+                            "name": "Perfect Shine -pesu"
+                        }
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-29T15:19:00+0300",
+                    "amount": 9.50,
+                    "taxes": [
+                        [
+                            1.17,
+                            0.14
+                        ]
+                    ],
+                    "beneficiary": "Lidl Niittykumpu",
+                    "sub_cat": "ruoka",
+                    "main_cat": "ruoka",
+                    "payment_method": [
+                        "Cash",
+                        "Cash"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 0.33,
+                            "tax_percentage": 0.14,
+                            "amount": 2,
+                            "name": "Spagetti 1kg"
+                        },
+                        {
+                            "price": 1.60,
+                            "tax_percentage": 0.14,
+                            "mass": 0.230,
+                            "name": "Irtomakeiset"
+                        },
+                        {
+                            "price": 0.35,
+                            "tax_percentage": 0.14,
+                            "amount": 2,
+                            "name": "Freshona tomaattipyree"
+                        },
+                        {
+                            "price": 0.24,
+                            "tax_percentage": 0.14,
+                            "amount": 3,
+                            "name": "Italiamo hieno tomaattimurska"
+                        },
+                        {
+                            "price": 5.81,
+                            "tax_percentage": 0.14,
+                            "mass": 1.944,
+                            "name": "Klementtiini irto"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "income": {
+        "year": 2019,
+        "months": {
+            "9": [
+                {
+                    "entry_date": "2019-09-02T00:00:00+0000",
+                    "amount": 250.28,
+                    "payer": "Kela",
+                    "taxes": [],
+                    "sub_cat": "opintotuki",
+                    "main_cat": "tuki",
+                    "payment_method": [
+                        "OP",
+                        "Wire"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-02T00:00:00+0000",
+                    "amount": 399.20,
+                    "payer": "Kela",
+                    "taxes": [],
+                    "sub_cat": "asumistuki",
+                    "main_cat": "tuki",
+                    "payment_method": [
+                        "OP",
+                        "Wire"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-09T00:00:00+0000",
+                    "amount": 2.00,
+                    "taxes": [],
+                    "payer": "AG",
+                    "sub_cat": "sekalainen",
+                    "main_cat": "sekalainen",
+                    "payment_method": [
+                        "Danske Bank",
+                        "MobilePay"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-10T00:00:00+0000",
+                    "amount": 15.00,
+                    "taxes": [],
+                    "payer": "MA",
+                    "sub_cat": "tori.fi",
+                    "main_cat": "käytetyt tavarat",
+                    "payment_method": [
+                        "Danske Bank",
+                        "MobilePay"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-11T00:00:00+0000",
+                    "amount": 2.60,
+                    "taxes": [],
+                    "payer": "OCJ",
+                    "sub_cat": "sekalainen",
+                    "main_cat": "sekalainen",
+                    "payment_method": [
+                        "Danske Bank",
+                        "MobilePay"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-16T00:00:00+0000",
+                    "amount": 2.60,
+                    "taxes": [],
+                    "payer": "TK",
+                    "sub_cat": "sekalainen",
+                    "main_cat": "sekalainen",
+                    "payment_method": [
+                        "Danske Bank",
+                        "MobilePay"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-16T00:00:00+0000",
+                    "amount": 5.10,
+                    "taxes": [],
+                    "payer": "LA",
+                    "sub_cat": "sekalainen",
+                    "main_cat": "sekalainen",
+                    "payment_method": [
+                        "Danske Bank",
+                        "MobilePay"
+                    ]
+                },
+                {
+                    "entry_date": "2019-09-18T00:00:00+0000",
+                    "amount": 5.10,
+                    "taxes": [],
+                    "payer": "SM",
+                    "sub_cat": "sekalainen",
+                    "main_cat": "sekalainen",
+                    "payment_method": [
+                        "Danske Bank",
+                        "MobilePay"
+                    ]
+                }
+            ]
+        }
+    }
+}

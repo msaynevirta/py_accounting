@@ -1,0 +1,66 @@
+{
+    "expenses": {
+        "year": 0,
+        "months": {
+            "0": [
+                {
+                    "entry_date": "0000-00-00T00:00:00+0000",
+                    "value_date": null,
+                    "amount": 0.0,
+                    "taxes": [
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ],
+                    "beneficiary": "X",
+                    "sub_cat": "x",
+                    "main_cat": "x",
+                    "ref_num": null,
+                    "ref_num_payer": null,
+                    "archival_id": null,
+                    "payment_method": [
+                        "X",
+                        "X"
+                    ],
+                    "individual_products": [
+                        {
+                            "price": 0.0,
+                            "tax_percentage": 0.0,
+                            "amount": null,
+                            "mass": null,
+                            "discount": null,
+                            "name": "X",
+                            "category_high": "X",
+                            "category_mid": "X",
+                            "category_low": "X",
+                            "common_id": "X",
+                            "barcode": "X"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "income": {
+        "year": 0,
+        "months": {
+            "9": [
+                {
+                    "date": "0000-00-00T00:00:00+0000",
+                    "amount": 0.0,
+                    "payer": "X",
+                    "sub_cat": "x",
+                    "main_cat": "x",
+                    "payment_method": [
+                        "X",
+                        "X"
+                    ],
+                    "ref_num": null,
+                    "ref_num_payer": null,
+                    "archival_id": null
+                }
+            ]
+        }
+    }
+}

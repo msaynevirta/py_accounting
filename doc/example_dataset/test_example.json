@@ -1,0 +1,223 @@
+{
+    "expenses" : 
+    {
+        "months" : 
+        {
+            "1" : 
+            [
+                {
+                    "amount" : 5.85,
+                    "archival_id" : "",
+                    "beneficiary" : "VR Lippukauppa",
+                    "entry_date" : "2019-09-02T00:00:00+0000",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "2081 93403 69465",
+                    "ref_number_payer" : "",
+                    "value_date" : "2019-08-31T00:00:00+0000"
+                },
+                {
+                    "amount" : 5.85,
+                    "archival_id" : "",
+                    "beneficiary" : "VR Lippukauppa",
+                    "entry_date" : "2019-09-02T00:00:00+0000",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "2081 93403 69465",
+                    "ref_number_payer" : "",
+                    "value_date" : "2019-08-31T00:00:00+0000"
+                },
+                {
+                    "amount" : 19.98,
+                    "archival_id" : "",
+                    "beneficiary" : "Moi",
+                    "entry_date" : "2019-09-04T00:00:00+0000",
+                    "payment_method" : [ "Nordea", "Visa Electron" ],
+                    "ref_number" : "190903138805",
+                    "ref_number_payer" : "",
+                    "value_date" : "2019-09-04T00:00:00+0000"
+                },
+                {
+                    "amount" : 19.98,
+                    "archival_id" : "",
+                    "beneficiary" : "Moi",
+                    "entry_date" : "2019-09-04T00:00:00+0000",
+                    "payment_method" : [ "Nordea", "Visa Electron" ],
+                    "ref_number" : "190903138805",
+                    "ref_number_payer" : "",
+                    "value_date" : "2019-09-04T00:00:00+0000"
+                },
+                {
+                    "amount" : 6.71,
+                    "archival_id" : "",
+                    "beneficiary" : "LIDL  ESPOO NIITTYKUMPU",
+                    "entry_date" : "2019-09-18T00:00:00+0000",
+                    "payment_method" : [ "Nordea", "Visa Electron" ],
+                    "ref_number" : "190917726119",
+                    "ref_number_payer" : "",
+                    "value_date" : "2019-09-18T00:00:00+0000"
+                },
+                {
+                    "amount" : 6.71,
+                    "archival_id" : "",
+                    "beneficiary" : "LIDL  ESPOO NIITTYKUMPU",
+                    "entry_date" : "2019-09-18T00:00:00+0000",
+                    "payment_method" : [ "Nordea", "Visa Electron" ],
+                    "ref_number" : "190917726119",
+                    "ref_number_payer" : "",
+                    "value_date" : "2019-09-18T00:00:00+0000"
+                }
+            ],
+            "10" : [],
+            "11" : [],
+            "12" : [],
+            "2" : [],
+            "3" : [],
+            "4" : [],
+            "5" : [],
+            "6" : [],
+            "7" : [],
+            "8" : [],
+            "9" : []
+        },
+        "year" : 1234
+    },
+    "income" : 
+    {
+        "months" : 
+        {
+            "1" : 
+            [
+                {
+                    "amount" : 2.0,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-09T00:00:00+0000",
+                    "payer" : "MobilePay: AG",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909098E9849349044",
+                    "value_date" : "2019-09-09T00:00:00+0000"
+                },
+                {
+                    "amount" : 15.0,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-10T00:00:00+0000",
+                    "payer" : "MobilePay: MA",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909098E9850202885",
+                    "value_date" : "2019-09-10T00:00:00+0000"
+                },
+                {
+                    "amount" : 3.0,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-11T00:00:00+0000",
+                    "payer" : "MobilePay: OCJ",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909108E9854156106",
+                    "value_date" : "2019-09-11T00:00:00+0000"
+                },
+                {
+                    "amount" : 2.6,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-11T00:00:00+0000",
+                    "payer" : "MobilePay: TK",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909118E9855638470",
+                    "value_date" : "2019-09-11T00:00:00+0000"
+                },
+                {
+                    "amount" : 5.1,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-16T00:00:00+0000",
+                    "payer" : "MobilePay: LA",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909168E9870324843",
+                    "value_date" : "2019-09-16T00:00:00+0000"
+                },
+                {
+                    "amount" : 5.1,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-16T00:00:00+0000",
+                    "payer" : "MobilePay: SM",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909168E9870793949",
+                    "value_date" : "2019-09-16T00:00:00+0000"
+                },
+                {
+                    "amount" : 2.0,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-09T00:00:00+0000",
+                    "payer" : "MobilePay: AG",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909098E9849349044",
+                    "value_date" : "2019-09-09T00:00:00+0000"
+                },
+                {
+                    "amount" : 15.0,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-10T00:00:00+0000",
+                    "payer" : "MobilePay: MA",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909098E9850202885",
+                    "value_date" : "2019-09-10T00:00:00+0000"
+                },
+                {
+                    "amount" : 3.0,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-11T00:00:00+0000",
+                    "payer" : "MobilePay: OCJ",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909108E9854156106",
+                    "value_date" : "2019-09-11T00:00:00+0000"
+                },
+                {
+                    "amount" : 2.6,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-11T00:00:00+0000",
+                    "payer" : "MobilePay: TK",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909118E9855638470",
+                    "value_date" : "2019-09-11T00:00:00+0000"
+                },
+                {
+                    "amount" : 5.1,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-16T00:00:00+0000",
+                    "payer" : "MobilePay: LA",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909168E9870324843",
+                    "value_date" : "2019-09-16T00:00:00+0000"
+                },
+                {
+                    "amount" : 5.1,
+                    "archival_id" : "",
+                    "entry_date" : "2019-09-16T00:00:00+0000",
+                    "payer" : "MobilePay: SM",
+                    "payment_method" : [ "Nordea", "Wire" ],
+                    "ref_number" : "",
+                    "ref_number_payer" : "201909168E9870793949",
+                    "value_date" : "2019-09-16T00:00:00+0000"
+                }
+            ],
+            "10" : [],
+            "11" : [],
+            "12" : [],
+            "2" : [],
+            "3" : [],
+            "4" : [],
+            "5" : [],
+            "6" : [],
+            "7" : [],
+            "8" : [],
+            "9" : []
+        }
+    }
+}
