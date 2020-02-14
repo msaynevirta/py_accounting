@@ -1,0 +1,17 @@
+# Files in data folder
+src/data/*
+
+# GUI 
+src/gui/build/*
+*/gui.pro.user
+moc_*.cpp
+moc_*.h
+*.stash
+src/gui/Makefile
+src/gui/gui
+
+# Compiled files
+test/test
+main
+*.o
+*.exe
