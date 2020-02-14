@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <limits>
-#include "analytics/analytics_month.hpp"
 #include "exception.hpp"
 
 void print_out(Json::Value root)
