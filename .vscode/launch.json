@@ -43,6 +43,20 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "Python: Main",
+            "type": "python",
+            "request": "launch",
+            "program": "${fileDirname}/main.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
