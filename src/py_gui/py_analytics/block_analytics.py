@@ -38,15 +38,14 @@ class BlockAnalytics:
             for it in self.raw_json_data[transaction_type]["months"][str(month)]:
                 try:
                     if(len(path) == 3 and
-                    it["main_cat"] == main_cat and
-                    it["sub_cat"] == sub_cat and
-                    it[recipient] == beneficiary):
-                            total += float(it["amount"])
-                            
+                       it["main_cat"] == main_cat and
+                       it["sub_cat"] == sub_cat and
+                       it[recipient] == beneficiary):
+                        total += float(it["amount"])
                     elif(len(path) == 2 and
-                        it["main_cat"] == main_cat and
-                        it["sub_cat"] == sub_cat):
-                            total += float(it["amount"])
+                         it["main_cat"] == main_cat and
+                         it["sub_cat"] == sub_cat):
+                        total += float(it["amount"])
                 except KeyError:
                     print("Error reading values from transaction:", it[recipient],"on", it["entry_date"])
         except TypeError:
@@ -133,11 +132,11 @@ class BlockAnalytics:
 
         savings_in, savings_out = self.collect_savings(month)
 
-        if(savings_in > savings_out):
+        if savings_in > savings_out:
             self.indexes.append("Säästötili")
             self.config.append([self.indexes.index("Säästötili"), (savings_in - savings_out), main_node])
 
-        elif(savings_in < savings_out):
+        elif savings_in < savings_out:
             self.indexes.append("Säästötili")
             self.config.append([savings_node, (savings_out - savings_in), self.indexes.index("Säästötili")])
             
