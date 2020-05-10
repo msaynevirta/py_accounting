@@ -1,3 +1,6 @@
 [submodule "src/jsoncpp"]
 	path = src/jsoncpp
 	url = https://github.com/open-source-parsers/jsoncpp
+[submodule "src/py_analytics/squarify"]
+	path = src/py_analytics/squarify
+	url = https://github.com/laserson/squarify
