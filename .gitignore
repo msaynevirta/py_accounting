@@ -15,3 +15,6 @@ test/test
 main
 *.o
 *.exe
+
+# Python 
+*.pyc
