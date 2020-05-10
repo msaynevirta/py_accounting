@@ -1,8 +1,8 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QGraphicsRectItem
 
-from py_gui.py_analytics.block_analytics import BlockAnalytics
-from py_gui.gui import Window
+from block_analytics import BlockAnalytics
+from gui import Window
 
 class BlockGraphicsItem(QGraphicsRectItem):
     '''

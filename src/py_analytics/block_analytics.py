@@ -1,5 +1,4 @@
-import csv
-from json import load, JSONDecoder, JSONDecodeError
+from json import load, JSONDecodeError
 
 def json_loader(filedir): # collect data from main json database
     try:
