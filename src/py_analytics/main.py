@@ -1,33 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QGraphicsRectItem
+from PyQt5.QtWidgets import QApplication
 
-from block_analytics import BlockAnalytics
 from gui import Window
-
-class BlockGraphicsItem(QGraphicsRectItem):
-    '''
-    Handles drawing of blocks
-    '''
-
-class BlockDiagram(BlockGraphicsItem):
-    def __init__(self, expenses, income):
-        super(BlockDiagram, self).__init__()
-
-    def load_level(self, type, depth):
-        pass # loads data from certain level in income/expenses
-
-    def load_data(self):
-        # init with January
-        it = BlockAnalytics(
-            "/home/markus/repos/azure-accounting/src/data/sankey_config.json",
-            "/home/markus/repos/azure-accounting/src/data/main_database.json")
-        it.load_config()
-
-        for month in range(1, 13):
-            print("month: {:d}\n".format(month))
-            it.populate_config(month)
-
-        it.calculate_savings(0)
 
 def main():
     # Every Qt application must have one instance of QApplication.
