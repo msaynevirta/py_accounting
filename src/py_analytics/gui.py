@@ -3,6 +3,9 @@ from PyQt5.QtWidgets import QMainWindow, QGraphicsView, QWidget, QHBoxLayout, QV
 from year_line_chart import YearLineAnalytics
 from line_graphics import LineDiagram
 
+from pie_graphics import PieDiagram
+from payment_methods import PaymentMethods
+
 from block_graphics import BlockDiagram
 
 class Window(QMainWindow):
@@ -69,14 +72,22 @@ class Window(QMainWindow):
         self.vertical.addWidget(self.view)
 
         data_path = "/home/markus/repos/azure-accounting/src/data/main_database_2019.json"
-        qseries_2019 = YearLineAnalytics(data_path).construct_cumulative_qseries(2019)
+        line_qseries_2019 = YearLineAnalytics(data_path).construct_cumulative_qseries(2019)
 
         data_path = "/home/markus/repos/azure-accounting/src/data/main_database.json"
-        qseries_2020 = YearLineAnalytics(data_path).construct_cumulative_qseries(2019)
+        line_qseries_2020 = YearLineAnalytics(data_path).construct_cumulative_qseries(2020)
 
-        self.linediag = LineDiagram(qseries_2019, qseries_2020, "empty", "Cumulative yearly expenses").create_linechart()
+        pie_qseries_2020 = PaymentMethods(data_path)
+
+        self.linediag = LineDiagram(line_qseries_2019, line_qseries_2020, "empty", "Cumulative yearly expenses").create_linechart()
+        self.piediag = PieDiagram(pie_qseries_2020, "empty", "Cumulative yearly expenses").create_piechart()
         self.linediag.setFixedSize(500,500)
+
         self.horizontal.addWidget(self.linediag)
+        self.horizontal.addWidget(self.piediag)
+
+        self.vertical.addLayout(self.horizontal)
+
         self.show()
 
         
