@@ -1,4 +1,5 @@
 import sqlite3
+from uuid import uuid4
 
 class PaymentDatabase:
     def __init__(self, filepath):
@@ -13,6 +14,7 @@ class PaymentDatabase:
                 PRIMARY KEY(id)
             );
             """)
+
         self.cursor.execute("""
             CREATE TABLE Payment(
                 id CHAR(36) NOT NULL,
@@ -58,7 +60,7 @@ class PaymentDatabase:
                 product_id REFERENCES Product(id) NOT NULL,
                 price REAL NOT NULL,
                 tax_percentage REAL,
-                amount INT,
+                amount INTEGER,
                 mass REAL,
                 volume REAL,
                 PRIMARY KEY(payment_id, product_id),
@@ -98,7 +100,20 @@ class PaymentDatabase:
                 PRIMARY KEY(payment_id, description)
             );
             """)
+        # Convert PKs to autoincrement
         self.db.commit()
+
+    def check_if_exists(self, table, attribute, value):
+        return False
+
+    def new_row(self, table, attribute, value, *args):
+        existing_id = self.check_if_exists(table, attribute, value)
+
+        if not existing_id:
+            # Generate UUID -> check that not in table
+            # Write new row based on args
+            pass
+
 
     def close_db(self):
         self.db.close()
