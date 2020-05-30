@@ -26,6 +26,36 @@ class Window(QMainWindow):
 
         self.show()
 
+        self.draw_block_diagram(None)
+        self.vertical.addWidget(self.block_diagram)
+
+        data_list = [["/home/markus/repos/azure-accounting/src/data/main_database_2019.json", 2019], ["/home/markus/repos/azure-accounting/src/data/main_database.json", 2020]]
+        data_path = "/home/markus/repos/azure-accounting/src/data/main_database.json"
+
+        self.draw_method_pie(data_path)
+        self.draw_cumulative_line(data_list)
+
+        self.horizontal.addWidget(self.linediag)
+        self.horizontal.addWidget(self.piediag)
+
+        self.vertical.addLayout(self.horizontal)
+
+        self.show()
+
+    def draw_method_pie(self, data_path):
+        pie_qseries_2020 = PaymentMethods(data_path)
+        self.piediag = PieDiagram(pie_qseries_2020, "empty", "Cumulative yearly expenses").create_piechart()
+
+    def draw_cumulative_line(self, data_list):
+        line_qseries_list = []
+
+        for row in data_list:
+            line_qseries_list.append(YearLineAnalytics(row[0]).construct_cumulative_qseries(row[1]))
+
+        self.linediag = LineDiagram(line_qseries_list, "empty", "Cumulative yearly expenses").create_linechart()
+        self.linediag.setFixedSize(500,500)
+
+    def draw_block_diagram(self, data_path):
         testdata = [
             {
                 "dy": 433,
@@ -66,34 +96,5 @@ class Window(QMainWindow):
         ]
 
         # Add a view for showing the scene
-        self.view = QGraphicsView(BlockDiagram(testdata, [], "Test").add_tree_items("income"), self)
-        self.view.adjustSize()
-        #self.view.show()
-        self.vertical.addWidget(self.view)
-
-        data_list = [["/home/markus/repos/azure-accounting/src/data/main_database_2019.json", 2019], ["/home/markus/repos/azure-accounting/src/data/main_database.json", 2020]]
-        data_path = "/home/markus/repos/azure-accounting/src/data/main_database.json"
-
-        self.draw_method_pie(data_path)
-        self.draw_cumulative_line(data_list)
-
-
-        self.horizontal.addWidget(self.linediag)
-        self.horizontal.addWidget(self.piediag)
-
-        self.vertical.addLayout(self.horizontal)
-
-        self.show()
-
-    def draw_method_pie(self, data_path):
-        pie_qseries_2020 = PaymentMethods(data_path)
-        self.piediag = PieDiagram(pie_qseries_2020, "empty", "Cumulative yearly expenses").create_piechart()
-
-    def draw_cumulative_line(self, data_list):
-        line_qseries_list = []
-
-        for row in data_list:
-            line_qseries_list.append(YearLineAnalytics(row[0]).construct_cumulative_qseries(row[1]))
-
-        self.linediag = LineDiagram(line_qseries_list, "empty", "Cumulative yearly expenses").create_linechart()
-        self.linediag.setFixedSize(500,500)
+        self.block_diagram = QGraphicsView(BlockDiagram(testdata, [], "Test").add_tree_items("income"), self)
+        self.block_diagram.adjustSize()
