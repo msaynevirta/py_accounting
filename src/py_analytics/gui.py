@@ -26,14 +26,14 @@ class Window(QMainWindow):
 
         self.show()
 
-        self.draw_block_diagram(None)
-        self.vertical.addWidget(self.block_diagram)
-
         data_list = [["/home/markus/repos/azure-accounting/src/data/main_database_2019.json", 2019], ["/home/markus/repos/azure-accounting/src/data/main_database.json", 2020]]
         data_path = "/home/markus/repos/azure-accounting/src/data/main_database.json"
 
+        self.draw_block_diagram(data_path)
         self.draw_method_pie(data_path)
         self.draw_cumulative_line(data_list)
+
+        self.vertical.addWidget(self.block_diagram)
 
         self.horizontal.addWidget(self.linediag)
         self.horizontal.addWidget(self.piediag)
