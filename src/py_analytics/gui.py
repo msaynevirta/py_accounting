@@ -76,7 +76,7 @@ class Window(QMainWindow):
 
         self.draw_method_pie(data_path)
         self.draw_cumulative_line(data_list)
-        self.linediag.setFixedSize(500,500)
+
 
         self.horizontal.addWidget(self.linediag)
         self.horizontal.addWidget(self.piediag)
@@ -96,6 +96,4 @@ class Window(QMainWindow):
             line_qseries_list.append(YearLineAnalytics(row[0]).construct_cumulative_qseries(row[1]))
 
         self.linediag = LineDiagram(line_qseries_list, "empty", "Cumulative yearly expenses").create_linechart()
-        
-
-        
+        self.linediag.setFixedSize(500,500)
