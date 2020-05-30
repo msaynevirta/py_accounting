@@ -55,7 +55,7 @@ class YearLineAnalytics:
             cumulative_total = float(qseries.at(day-2).y()) + self.collect_total_from_raw_data("expenses", "beneficiary", month, day)
             qseries.append(day, cumulative_total)
 
-        qseries.setName(year)
+        qseries.setName(str(year))
 
         return qseries
 
