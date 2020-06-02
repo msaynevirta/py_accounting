@@ -28,14 +28,12 @@ class LineDiagram():
         for series in self.qseries_list:
             chart.addSeries(series)
 
-        chart.createDefaultAxes()
+        chart.createDefaultAxes() # autoscale y-axis
 
-        chart.setAxisX(self.x_axis)
+        chart.setAxisX(self.x_axis) # use predefined quarterly x-axis
 
         chart.setAnimationOptions(QChart.SeriesAnimations)
         chart.setTitle(self.title)
-
-        
 
         chart.legend().setVisible(True)
         chart.legend().setAlignment(Qt.AlignBottom)
