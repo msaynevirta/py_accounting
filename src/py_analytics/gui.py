@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QGraphicsView, QWidget, QHBoxLayout, QVBoxLayout
+from PyQt5.QtChart import QCategoryAxis
 
 from year_line_chart import YearLineAnalytics
 from line_graphics import LineDiagram
@@ -49,10 +50,13 @@ class Window(QMainWindow):
     def draw_cumulative_line(self, data_list):
         line_qseries_list = []
 
+        x_axis = QCategoryAxis()
+
         for row in data_list:
             line_qseries_list.append(YearLineAnalytics(row[0]).construct_cumulative_qseries(row[1]))
 
-        self.linediag = LineDiagram(line_qseries_list, "empty", "Cumulative yearly expenses").create_linechart()
+        self.linediag = LineDiagram(line_qseries_list, x_axis, "Cumulative yearly expenses").create_linechart()
+
         self.linediag.setFixedSize(500,500)
 
     def draw_block_diagram(self, data_path):
