@@ -1,0 +1,131 @@
+{
+    "expenses": [
+        [
+            {
+                "name": "Opintolaina (OP)",
+                "path": [
+                    "laina",
+                    "opintolaina",
+                    "OP"
+                ],
+                "sub": null
+            },
+            {
+                "name": "Kela",
+                "path": null,
+                "sub": [
+                    {
+                        "name": "Asumistuki",
+                        "path": [
+                            "tuki",
+                            "asumistuki"
+                        ],
+                        "sub": null
+                    },
+                    {
+                        "name": "Opintotuki",
+                        "path": [
+                            "tuki",
+                            "opintotuki"
+                        ],
+                        "sub": null
+                    }
+                ]
+            },
+            {
+                "name": "Palkka",
+                "path": null,
+                "sub": [
+                    {
+                        "name": "Aalto-yliopistosäätiö",
+                        "path": [
+                            "palkka",
+                            "palkka",
+                            "Aalto-korkeakoulusäätiö"
+                        ],
+                        "sub": null
+                    },
+                    {
+                        "name": "ABB Oy",
+                        "path": [
+                            "palkka",
+                            "palkka",
+                            "ABB Oy"
+                        ],
+                        "sub": null
+                    }
+                ]
+            },
+            {
+                "name": "Sukulaiset",
+                "path": null,
+                "sub": [
+                    {
+                        "name": "Matti Meikäläinen",
+                        "path": [
+                            "raha",
+                            "sukulaiset",
+                            "Matti Meikäläinen"
+                        ],
+                        "sub": null
+                    }
+                ]
+            },
+            {
+                "name": "Käytetyt tavarat",
+                "path": null,
+                "sub": [
+                    {
+                        "name": "Nettiauto.com",
+                        "path": [
+                            "käytetyt tavarat",
+                            "nettiauto.com"
+                        ],
+                        "sub": null
+                    },
+                    {
+                        "name": "Tori.fi",
+                        "path": [
+                            "käytetyt tavarat",
+                            "tori.fi"
+                        ],
+                        "sub": null
+                    }
+                ]
+            },
+            {
+                "name": "Sekalaiset",
+                "path": null,
+                "sub": [
+                    {
+                        "name": "Seligson",
+                        "path": [
+                            "sijoitukset",
+                            "lunastukset",
+                            "Seligson & Co Rahastoyhtiö Oyj"
+                        ],
+                        "sub": null
+                    },
+                    {
+                        "name": "MobilePay (in)",
+                        "path": [
+                            "velka",
+                            "mobilepay"
+                        ],
+                        "sub": null
+                    },
+                    {
+                        "name": "WeShare (in)",
+                        "path": [
+                            "velka",
+                            "WeShare"
+                        ],
+                        "sub": null
+                    }
+                ]
+            }
+        ]
+    ],
+    "income": [],
+    "savings": []
+}
