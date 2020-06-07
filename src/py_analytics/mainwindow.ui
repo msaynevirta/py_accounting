@@ -21,7 +21,7 @@
       <widget class="QWidget" name="home">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="btn_load">
           <property name="minimumSize">
            <size>
             <width>200</width>
@@ -45,23 +45,23 @@
           <widget class="QWidget" name="block_diagram">
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
-             <widget class="QGraphicsView" name="graphicsView"/>
+             <widget class="QGraphicsView" name="w_block_diagram"/>
             </item>
            </layout>
           </widget>
           <widget class="QWidget" name="bar_diagram">
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
-             <widget class="QWidget" name="widget_4" native="true"/>
+             <widget class="QWidget" name="w_bar_diagram" native="true"/>
             </item>
            </layout>
           </widget>
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <layout class="QHBoxLayout" name="qtcharts">
           <item>
-           <widget class="QWidget" name="widget" native="true">
+           <widget class="QWidget" name="w_cumulative_expenses" native="true">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -71,10 +71,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QWidget" name="widget_2" native="true"/>
-          </item>
-          <item>
-           <widget class="QWidget" name="widget_3" native="true"/>
+           <widget class="QWidget" name="w_method_pie" native="true"/>
           </item>
          </layout>
         </item>
