@@ -1,19 +1,19 @@
-from PyQt5.QtChart import QChart, QChartView, QValueAxis, QLineSeries
+from PyQt5.QtChart import QChart, QValueAxis, QCategoryAxis
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPainter
 
-class LineDiagram():
+class QuarterlyLineDiagram(QChart):
+    """Builds a QChart line chart with transaction data from two latest years"""
+
     def __init__(self, qseries_list, x_axis, title):
+        super(QuarterlyLineDiagram, self).__init__()
         self.qseries_list = qseries_list
-        self.title = title
+        self.setTitle(title)
 
-        self.x_axis = x_axis
+        # Setup quarterly axis
+        self.x_axis = QCategoryAxis()
         self.y_axis = QValueAxis()
         self.y_axis.setTickCount(6)
-
-    def create_linechart(self):
-        chart = QChart()
 
         self.x_axis.setMin(1)
         self.x_axis.setMax(366)
@@ -23,22 +23,14 @@ class LineDiagram():
         self.x_axis.append("Q3", 274)
         self.x_axis.append("Q4", 365)
 
-        series = QLineSeries()
-
         for series in self.qseries_list:
-            chart.addSeries(series)
+            self.addSeries(series)
 
-        chart.createDefaultAxes() # autoscale y-axis
+        self.createDefaultAxes() # autoscale y-axis
 
-        chart.setAxisX(self.x_axis) # use predefined quarterly x-axis
+        self.setAxisX(self.x_axis) # use predefined quarterly x-axis
 
-        chart.setAnimationOptions(QChart.SeriesAnimations)
-        chart.setTitle(self.title)
+        self.setAnimationOptions(QChart.SeriesAnimations)
 
-        chart.legend().setVisible(True)
-        chart.legend().setAlignment(Qt.AlignBottom)
-
-        chartview = QChartView(chart)
-        chartview.setRenderHint(QPainter.Antialiasing)
-
-        return chartview
+        self.legend().setVisible(True)
+        self.legend().setAlignment(Qt.AlignBottom)
