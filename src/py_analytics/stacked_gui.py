@@ -1,6 +1,8 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QWidget, QStackedWidget, QHBoxLayout, QFileDialog
+from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QWidget, QStackedWidget, QHBoxLayout, QFileDialog, QPushButton
 from PyQt5.QtCore import Qt
+
+from transaction_loader import TransActionLoader
 
 # Subclass QMainWindow to customise your application's main window
 class MainWindow(QMainWindow):
@@ -8,38 +10,43 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-        self.setWindowTitle("My Awesome App")
+        self.file_paths = []
+        self.data = None
 
-        self.page1 = SubWidget("test1")
-        self.page2 = InitMessageBox()
+        self.setWindowTitle("Personal finances")
 
-        #self.page2.addLabel
+        self.home = QWidget()
+        self.analytics = QWidget()
 
-        self.stackedWidget = QStackedWidget()
+        self.stacked_widget = QStackedWidget()
+        self.stacked_widget.addWidget(self.home)
+        self.stacked_widget.addWidget(self.analytics)
 
-        self.stackedWidget.addWidget(self.page1)
-        self.stackedWidget.addWidget(self.page2)
+        self.stacked_widget.setCurrentIndex(0)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.setCentralWidget(self.stacked_widget)
 
-        self.setCentralWidget(self.stackedWidget)
+        self.home_page()
 
-class SubWidget(QWidget):
-    def __init__(self, text, *args, **kwargs):
-        super(QWidget, self).__init__(*args, **kwargs)
-        label = QLabel()
-        layout = QHBoxLayout()
+    def home_page(self):
+        button = QPushButton(self)
+        button.setText("Choose transaction files")
 
-        label.setText(str(text))
+        button.clicked.connect(self.loadTransactions)
 
-        layout.addWidget(label)
-        
-        self.setLayout(layout)
+        box = QHBoxLayout(self)
+        box.setAlignment(Qt.AlignCenter)
 
-class InitMessageBox(QWidget):
-    def __init__(self, *args, **kwargs):
-        super(QWidget, self).__init__(*args, **kwargs)
-        self.msgbox = QFileDialog()
+        box.addWidget(button, alignment=Qt.AlignCenter)
+
+        self.home.setLayout(box)
+
+    def loadTransactions(self):
+        self.file_paths, _ = QFileDialog.getOpenFileNames(self, "Choose transaction files", "/home", "JSON files (*.json)")
+        self.data = TransActionLoader(self.file_paths).load_transactions()
+
+    def analytics_page(self):
+        pass
 
 app = QApplication(sys.argv)
 
