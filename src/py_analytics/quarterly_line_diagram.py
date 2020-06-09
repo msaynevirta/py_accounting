@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt
 class QuarterlyLineDiagram(QChart):
     """Builds a QChart line chart with transaction data from two latest years"""
 
-    def __init__(self, qseries_list, x_axis, title):
+    def __init__(self, qseries_list, title):
         super(QuarterlyLineDiagram, self).__init__()
         self.qseries_list = qseries_list
         self.setTitle(title)
