@@ -7,8 +7,6 @@ class QuarterlyLineDiagram(QChart):
 
     def __init__(self, qseries_list, title):
         super(QuarterlyLineDiagram, self).__init__()
-        self.qseries_list = qseries_list
-        self.setTitle(title)
 
         # Setup quarterly axis
         self.x_axis = QCategoryAxis()
@@ -23,7 +21,11 @@ class QuarterlyLineDiagram(QChart):
         self.x_axis.append("Q3", 274)
         self.x_axis.append("Q4", 365)
 
-        for series in self.qseries_list:
+
+        # Setup chart
+        self.setTitle(title)
+
+        for series in qseries_list:
             self.addSeries(series)
 
         self.createDefaultAxes() # autoscale y-axis
