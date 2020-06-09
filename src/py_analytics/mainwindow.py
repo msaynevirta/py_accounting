@@ -19,7 +19,7 @@ class MainWindow:
         self.main_window = QMainWindow()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.main_window)
-        self.ui.stackedWidget.setCurrentIndex(0)
+        self.ui.stackedWidget.setCurrentIndex(0) # Switch to home
 
         self.ui.btn_load.clicked.connect(self.load_transactions)
 
@@ -40,13 +40,10 @@ class MainWindow:
         for year in two_largest_keys:
             qlineseries_expenses.append(YearLineAnalytics(self.data, year))
 
-        self.ui.w_cumulative_expenses = QuarterlyLineDiagram(qlineseries_expenses, None, "Cumulative expenses")
-        self.ui.w_cumulative_expenses.show()
+        #self.ui.v_block_diagram.setChart()
+        self.ui.v_cumulative_expenses.setChart(QuarterlyLineDiagram(qlineseries_expenses, "Cumulative expenses"))
 
-        self.ui.qtcharts.update()
-
-        self.ui.stackedWidget.setCurrentIndex(1)
-        self.ui.stackedWidget.update()
+        self.ui.stackedWidget.setCurrentIndex(1) # Switch to analytics
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
