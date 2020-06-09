@@ -12,6 +12,7 @@ from payment_methods import PaymentMethods
 
 from quarterly_line_diagram import QuarterlyLineDiagram
 from pie_graphics import PieDiagram
+from block_graphics import BlockDiagram
 
 class MainWindow:
     def __init__(self):
@@ -37,6 +38,7 @@ class MainWindow:
 
     def build_analytics(self):
         self.cumulative_expenses_line()
+        self.block_diagram()
         self.method_pie(max(self.data)) # Create chart for most recent year
 
         self.ui.stackedWidget.setCurrentIndex(1) # Switch to analytics
@@ -63,6 +65,13 @@ class MainWindow:
         pie_chart.legend().setAlignment(Qt.AlignBottom)
 
         self.ui.v_method_pie.setChart(pie_chart)
+
+    def block_diagram(self):
+        blocks = None
+        block_labels = None
+        block_qscene = BlockDiagram(blocks, block_labels, "Tree chart of expenses and income")
+
+        self.ui.v_block_diagram.setScene(block_qscene)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
