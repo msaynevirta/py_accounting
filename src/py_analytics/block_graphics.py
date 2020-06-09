@@ -1,8 +1,9 @@
 from PyQt5.QtWidgets import QGraphicsRectItem, QGraphicsScene
 from PyQt5.QtGui import QColor
 
-class BlockDiagram():
+class BlockDiagram(QGraphicsScene):
     def __init__(self, blocks, block_labels, title):
+        super(BlockDiagram, self).__init__()
         self.blocks = blocks
         self.block_labels = block_labels
         self.title = title
