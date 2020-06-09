@@ -2,6 +2,14 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>666</height>
+   </rect>
+  </property>
   <property name="minimumSize">
    <size>
     <width>1000</width>
@@ -45,14 +53,14 @@
           <widget class="QWidget" name="block_diagram">
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
-             <widget class="QGraphicsView" name="w_block_diagram"/>
+             <widget class="QGraphicsView" name="v_block_diagram"/>
             </item>
            </layout>
           </widget>
           <widget class="QWidget" name="bar_diagram">
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
-             <widget class="QWidget" name="w_bar_diagram" native="true"/>
+             <widget class="QChartView" name="v_bar_chart"/>
             </item>
            </layout>
           </widget>
@@ -61,17 +69,10 @@
         <item>
          <layout class="QHBoxLayout" name="qtcharts">
           <item>
-           <widget class="QWidget" name="w_cumulative_expenses" native="true">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>200</height>
-             </size>
-            </property>
-           </widget>
+           <widget class="QChartView" name="v_method_pie"/>
           </item>
           <item>
-           <widget class="QWidget" name="w_method_pie" native="true"/>
+           <widget class="QChartView" name="v_cumulative_expenses"/>
           </item>
          </layout>
         </item>
@@ -105,6 +106,13 @@
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">PyQt5.QtChart</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
